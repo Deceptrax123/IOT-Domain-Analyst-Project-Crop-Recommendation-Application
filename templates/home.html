@@ -1,25 +1,26 @@
 <html>
 
-<body bgcolor=#d4a3ae>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+    </head>
 
+<body>
     <center>
-
-        <h1> Crop Recommendation System </h1><br>
-
-        <form method="POST" , action="{{url_for('home')}}">
-            <b> Nitrogen : <input type="text" , name='a' , placeholder="enter N"> <br><br>
-                Phosphorus: <input type="text" , name='b' , placeholder="enter P"> <br><br>
-                Potassium : <input type="text" , name='c' , placeholder="enter K"> <br><br>
-                Temperature : <input type="text" , name='d' , placeholder="enter T"> <br><br>
-                Humidity: <input type="text" , name='e' , placeholder="enter H"> <br><br>
-                pH : <input type="text" , name='f' , placeholder="enter pH"> <br><br>
-                Rainfall : <input type="text" , name='g' , placeholder="enter R"> <br><br>     
-                <br>
-            </b>
-            <input type="submit" , value='Predict'>
-        </form>
-
-        <img src="../static/crops.png" alt="crops">
+        <h1>Crop Recommendation System</h1>
+        <div class="container">
+            <form method="POST" , action="{{url_for('home')}}">
+                <b> Nitrogen : <input type="text" , name='a' , placeholder="enter N" required> 
+                    Phosphorus: <input type="text" , name='b' , placeholder="enter P" required> 
+                    Potassium : <input type="text" , name='c' , placeholder="enter K" required>
+                    Temperature : <input type="text" , name='d' , placeholder="enter T" required>
+                    Humidity: <input type="text" , name='e' , placeholder="enter H" required>
+                    pH : <input type="text" , name='f' , placeholder="enter pH" required>
+                    Rainfall : <input type="text" , name='g' , placeholder="enter R" required>    
+            
+                </b>
+                <input type="submit" , value='Predict'>
+            </form>
+        </div>
     </center>
 
 </body>

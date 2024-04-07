@@ -1,0 +1,25 @@
+<html>
+
+<body bgcolor=#d4a3ae>
+
+    <center>
+
+        <h1> Crop Reccomendation System </h1><br>
+
+        <form method="POST" , action="{{url_for('home')}}">
+            <b> Nitrogen : <input type="text" , name='a' , placeholder="enter N"> <br><br>
+                Phosphorus: <input type="text" , name='b' , placeholder="enter P"> <br><br>
+                Potassium : <input type="text" , name='c' , placeholder="enter K"> <br><br>
+                Temperature : <input type="text" , name='d' , placeholder="enter T"> <br><br>
+                Humidity: <input type="text" , name='e' , placeholder="enter H"> <br><br>
+                pH : <input type="text" , name='f' , placeholder="enter pH"> <br><br>
+                Rainfall : <input type="text" , name='g' , placeholder="enter R"> <br><br>     
+                <br>
+            </b>
+            <input type="submit" , value='Predict'>
+        </form>
+    </center>
+
+</body>
+
+</html>
